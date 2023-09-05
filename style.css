@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #03315d;
+}
+
+h1 {
+  color: #d61616;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p,
+li {
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #03315d;
+  font-weight: 600;
+}
+
+.custom-padding {
+  margin: 0px 20px;
+}
+
+/* Navbar CSS Starts */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Navbar CSS Ends */
+
+/* Hero Banner CSS Starts */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust the distance from the left side */
+  transform: translateY(-50%);
+  max-width: 300px; /* Adjust the maximum width of the text box */
+}
+
+/* Hero Banner CSS Ends */
+
+/* Image Section CSS Starts */
+
+.image-info-container {
+  margin: 20px;
+}
+
+.question-content p {
+  padding: 10px 0px;
+}
+
+.question-title {
+  display: flex;
+}
+
+.question-title h2 {
+  font-size: 32px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.flex-images-section {
+  display: flex;
+  text-align: center;
+}
+
+.flex-image {
+  flex: 1;
+}
+
+.flex-image:not(:last-child) {
+  padding: 0px 20px 40px 0px;
+}
+
+.flex-image img {
+  border: 1px solid #03315d;
+  width: 100%;
+}
+
+/* Image Section CSS Ends */
+
+/* Description Section CSS Starts */
+
+.description-container {
+  margin: 0px 40px;
+}
+
+.information-section {
+  padding-bottom: 30px;
+}
+
+.info-content {
+  display: flex;
+}
+
+.left-content {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.left-content h1 {
+  margin-top: 0px;
+}
+
+.left-content ul {
+  list-style-type: disc;
+}
+
+.right-content img {
+  width: 300px; /* Adjust the height as needed */
+  margin-top: 20px;
+}
+
+.description-first .mobile-view img {
+  display: none;
+  margin-top: 20px;
+}
+
+.marginRight {
+  margin-right: 40px;
+}
+
+/* Description Section CSS Ends */
+
+/* Footer Section CSS Starts */
+
+.footer {
+  text-align: center;
+}
+
+.footer-content {
+  margin-top: 50px;
+}
+
+.footer-content p {
+  margin: 15px 0;
+}
+
+.footer-list {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.footer-list li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.custom-line {
+  display: none;
+}
+
+.footer-line,
+.custom-line {
+  border: 3px solid #d61616;
+  margin-bottom: 50px;
+}
+
+/* Footer Section CSS ends */
+
+@media screen and (max-width: 768px) {
+  .custom-padding,
+  .information-section .question-content,
+  .information-section .left-content {
+    margin: 0px 10px;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+    background: aliceblue;
+    width: -webkit-fill-available;
+  }
+
+  .menu-list li {
+    margin-bottom: 15px;
+  }
+
+  .menu-list.active {
+    display: flex;
+  }
+
+  .menu-icon,
+  .custom-line,
+  .description-first .mobile-view img {
+    display: block;
+  }
+
+  .hero-text {
+    left: 10px; /* Adjust the distance from the left side for smaller screens */
+  }
+
+  .hero-text h2 {
+    font-size: 14px;
+  }
+  .hero-text p {
+    font-size: 12px;
+  }
+
+  .image-info-container {
+    margin: 0px;
+    padding-top: 30px;
+  }
+
+  .question-content p {
+    padding: 0px;
+    margin: 15px 0px 20px 0px;
+  }
+
+  .question-title h2 {
+    font-size: 24px;
+  }
+
+  .flex-images-section {
+    display: block; /* Displayed as block for mobile devices */
+    margin-top: 10px;
+  }
+
+  .flex-image {
+    padding: 0px 0px 20px 0px !important;
+  }
+
+  .left-content,
+  .marginRight {
+    margin-right: 0px;
+  }
+
+  .info-content {
+    display: block; /* Displayed as block for mobile devices */
+    margin-top: 10px;
+  }
+
+  .description-container {
+    margin: 0px;
+  }
+
+  .description-first .right-content img {
+    display: none;
+  }
+
+  .description-second .right-content img,
+  .description-first .mobile-view img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
